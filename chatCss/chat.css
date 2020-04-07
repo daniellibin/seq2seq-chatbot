@@ -1,0 +1,165 @@
+h5{
+	margin: 0;
+}
+img{
+	max-width: 100%;
+    vertical-align: middle
+}
+input{
+	outline: none;	
+}
+input::-webkit-input-placeholder {
+    text-align: center;
+}
+body{
+    max-width: 720px;
+    margin: 0 auto;
+    background: #f1f1f1;
+    color:#333;
+    font-size: 0.26rem;
+}
+.header{
+    border-bottom: 1px solid #dfdfdf;
+    padding:0 0.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    max-width: 720px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.back{
+    position: absolute;  
+	top: 0;
+	left: 0.3rem;
+	background:url(../chatImages/left.png) no-repeat;
+    width: 0.2rem;
+    height:0.4rem;
+    margin-top: 0.34rem;
+    background-size: 0.2rem 0.4rem;
+}
+.header .tit{
+    font-size: 0.32rem;
+    vertical-align: middle;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-weight: normal;
+}
+.header .right{
+	position: absolute;
+	right: 0.3rem;
+	top: 0;
+	float: none;
+	font-size: 0.3rem;
+	line-height: 1.2rem;
+}
+.message{
+    background-color: #f1f1f1;
+	padding: 1.2rem 0.3rem 1rem 0.3rem;	
+}
+.time{
+    font-size:0.24rem;
+    color:#999;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+    height:1rem;
+    background-color:#fff;
+    line-height:1rem;
+    width: 100%;
+    max-width: 720px;
+    border-top: 1px solid #ddd;
+}
+.footer a{ text-decoration:none;}
+.footer img{
+    margin-left:0.2rem;
+    width: 0.5rem;
+}
+ .footer input{
+    margin-left:0.2rem;
+    width:5.1rem;
+    height:0.64rem;
+    border-radius: 0.1rem;
+    border:0.01rem solid #ddd;
+    padding : 0 0.15rem;
+}
+.footer p{
+   width:1.2rem;
+    height:0.68rem;
+    font-size:0.3rem;
+    color:#fff;
+    line-height:0.68rem;
+    text-align:center;
+    background-color:#ddd;
+    border-radius: 0.1rem;
+    float:right;
+    margin-top:0.2rem;
+    margin-right:0.2rem;
+}
+.footer p:hover{
+	cursor: pointer;
+}
+.send:after,.show:after,.msg:after{
+	content: "";
+	clear: both;
+	display: table;	
+}
+
+.msg>img{
+	width: 0.8rem;
+	float: left;
+}
+.msg>p{
+	float: left;
+	margin:0  0.4rem;
+	padding: 0.25rem;
+	background: #fff;
+	font-size: 0.3rem;
+	position: relative;
+	border-radius: 0.2rem;
+	max-width:5rem ;
+	box-sizing: border-box;
+}
+
+.show .msg_input{
+	position: absolute;
+	background: url(../chatImages/msg-input.png) no-repeat;
+	background-size: 0.31rem auto;
+	width: 0.31rem;
+	height: 0.51rem;
+	left: -0.31rem;
+	top: 0.25rem;
+}
+.send .msg_input{
+	position: absolute;
+	background: url(../chatImages/msg-input.png) no-repeat;
+	background-size: 0.31rem auto;
+	width: 0.31rem;
+	height: 0.51rem;
+	left: -0.12rem;
+	top: 0.1rem;
+}
+.show .msg img,.show .msg p,.show .msg{
+	float: right;
+}
+
+
+.show .msg_input{
+	left: auto;
+	right: -0.11rem;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); 	/* IE 9 */
+	-moz-transform:rotate(180deg); 	/* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg); 	/* Opera */
+}
+.send,.show{
+	padding-bottom: 0.3rem;
+}

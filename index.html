@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		 <link rel="shortcut icon" href="chatImages/favicon.ico" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>聊天界面</title>
+		<link rel="stylesheet" type="text/css" href="chatCss/chat.css" />
+
+		<script src="chatJs/jquery.min.js"></script>
+		<script src="chatJs/flexible.js"></script>
+	</head>
+
+	<body>
+		<header class="header" align="center">
+			<span style="font-size:18px">聊天机器人</span>
+			<input type="hidden" style="font-size:15px;text-align: center;" type="text" id="picker" placeholder="参数选择"  readonly="readonly" 
+			value='LSTM 2层 25轮'>
+		</header>
+		<div class="message">
+
+			 <div class="send">
+				<div class="msg">
+					<img src="chatImages/man.png" alt="" />
+					<p><i class="msg_input"></i>请输入内容开始对话</p>
+				</div>
+			</div>
+			<div class="send">
+				
+			</div>
+
+		</div>
+		<div class="footer">
+			
+			
+			<input type="text" id='inputVal' placeholder='请输入对话内容'/>
+			<p>发送</p>
+		</div>
+	<script src="chatJs/chat.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="chatJs/picker.min.js"></script>
+	<script type="text/javascript" src="chatJs/city.js"></script>
+	<script type="text/javascript" src="chatJs/index.js"></script>
+	
+	</body>
+</html>
